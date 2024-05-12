@@ -21,12 +21,13 @@ finderProfileScene.enter(async ctx => {
   if(ctx.session.resume?.description !== undefined) {
     let result = Array(7);
     result.push(`Ваш текущий профиль\n\n`);
-    result.push(`1) ${ctx.session.resume.name}\n`);
-    result.push(`2) ${ctx.session.resume.specs}\n`);
-    result.push(`3) ${ctx.session.resume.description}\n`);
-    result.push(`4) ${ctx.session.resume.exp}\n`);
-    result.push(`5) ${ctx.session.resume.resumeUrl}\n`);
-    result.push(`6) ${ctx.session.resume.videoResumeUrl}\n`);
+    result.push(`1) Имя: ${ctx.session.resume.name}\n`);
+    result.push(`2) Сфера деятельности: ${ctx.session.resume.specs}\n`);
+    result.push(`3) Информации о себе и компетенциях: ${ctx.session.resume.description}\n`);
+    result.push(`4) Образование и опыт работы: ${ctx.session.resume.exp}\n`);
+    result.push(`5) Портфолио: ${ctx.session.resume.resumeUrl}\n`);
+    result.push(`6) Видео-визитка: ${ctx.session.resume.videoResumeUrl}\n`);
+    result.push(`7) Стоимость и условия работы: ${ctx.session.resume.rate}\n`);
 
     await ctx.reply(
       result.join(''),

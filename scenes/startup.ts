@@ -29,9 +29,9 @@ profileScene.enter(async ctx => {
     result.push(`1) Имя: ${ctx.session.project.userName}\n`);
     result.push(`2) Роль: ${ctx.session.project.userRole}\n`);
     result.push(`3) Название проекта: ${ctx.session.project.title}\n`);
-    result.push(`4) Сфера: ${ctx.session.project.description}\n`);
-    result.push(`5) Описание: ${ctx.session.project.themes}\n`);
-    result.push(`6) Описание: ${ctx.session.project.themes}\n`);
+    result.push(`4) Сфера: ${ctx.session.project.themes}\n`);
+    result.push(`5) Описание: ${ctx.session.project.description}\n`);
+    result.push(`6) Ссылка на проект: ${ctx.session.project.projectUrl}\n`);
 
     await ctx.reply(
       result.join(''),
