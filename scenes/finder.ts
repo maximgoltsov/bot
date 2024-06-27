@@ -9,7 +9,7 @@ finderMainScene.enter(ctx => ctx.reply(
   Markup.inlineKeyboard([
     Markup.button.callback('Профиль', 'profile'),
     Markup.button.url('Поиск работы', 'https://t.me/founderfusionvac'),
-    Markup.button.url('Полезные материалы', 'http://ya.ru'),
+    Markup.button.url('Полезные материалы', 'https://possible-odometer-e29.notion.site/9220835defcb45568e2374db1760fb8e?pvs=4'),
     Markup.button.url('Сообщество Founder Fusion', 'https://t.me/Founderfusion'),
   ])
 ));
