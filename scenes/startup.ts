@@ -11,6 +11,7 @@ startupMainScene.enter(ctx => {
       Markup.button.callback('Профиль проекта', 'profile'),
       Markup.button.callback('Поиск команды', 'findTeam'),
       Markup.button.url('Полезные матриалы', 'http://ya.ru'),
+      Markup.button.url('Сообщество Founder Fusion', 'https://t.me/Founderfusion'),
     ])
   )
 })
