@@ -8,8 +8,9 @@ finderMainScene.enter(ctx => ctx.reply(
   "Главное меню специалиста",
   Markup.inlineKeyboard([
     Markup.button.callback('Профиль', 'profile'),
-    Markup.button.url('Поиск работы', 'http://ya.ru'),
+    Markup.button.url('Поиск работы', 'https://t.me/founderfusionvac'),
     Markup.button.url('Полезные материалы', 'http://ya.ru'),
+    Markup.button.url('Сообщество Founder Fusion', 'https://t.me/Founderfusion'),
   ])
 ));
 finderMainScene.action('profile', async ctx => {

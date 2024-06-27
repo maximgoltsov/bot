@@ -57,7 +57,7 @@ startupFindTeam.enter(async ctx => {
     'Поиск команды',
     {
       ...Markup.inlineKeyboard([
-        Markup.button.url('Биржа резюме', 'http://ya.ru'),
+        Markup.button.url('Биржа резюме', 'https://t.me/founderfusionteam'),
         Markup.button.callback('Разместить вакансию', 'createJob'),
         Markup.button.callback('Назад', 'back'),
       ])
